@@ -1,3 +1,5 @@
+// Raphaël Desjardins
+// 2025-11-10
 package Conversion;
 
 import java.util.Scanner;
