@@ -1,5 +1,7 @@
 // Raphaël Desjardins
 // 2025-11-10
+// lab 4
+
 package Conversion;
 
 import java.util.Scanner;
@@ -8,6 +10,7 @@ public class Entiers {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        //partie 1
         int nombre;
 
         do {
@@ -26,7 +29,7 @@ public class Entiers {
         System.out.println("Le nombre " + nombre + " en base 2 est : " + Binaire.toString());
         String binaryInput;
         boolean valid;
-
+        //partie 2
         do {
             System.out.print("\nEntrez un nombre binaire (1 à 10 chiffres, ex: 1, 010, 1011, etc.) : ");
             binaryInput = sc.next();
