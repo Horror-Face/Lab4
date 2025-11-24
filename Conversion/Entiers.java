@@ -1,7 +1,6 @@
 // Raphaël Desjardins
 // 2025-11-10
 // lab 4
-
 package Conversion;
 
 import java.util.Scanner;
@@ -39,9 +38,13 @@ public class Entiers {
             }
         } while (!valid);
 
-        int decimalFromBinary = Integer.parseInt(binaryInput, 2);
-        System.out.println("Le nombre binaire " + binaryInput + " correspond à " + decimalFromBinary + " en base 10.");
+        int decimalFromBinary = 0;
 
-        sc.close();
+        for (int i = 0; i < binaryInput.length(); i++) {
+            decimalFromBinary = decimalFromBinary * 2 + (binaryInput.charAt(i) - '0');
+        }
+            System.out.println("Le nombre binaire " + binaryInput + " correspond à " + decimalFromBinary + " en base 10.");
+
+            sc.close();
+        }
     }
-}
