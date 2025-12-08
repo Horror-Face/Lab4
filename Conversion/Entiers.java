@@ -43,8 +43,8 @@ public class Entiers {
         for (int i = 0; i < binaryInput.length(); i++) {
             decimalFromBinary = decimalFromBinary * 2 + (binaryInput.charAt(i) - '0');
         }
-            System.out.println("Le nombre binaire " + binaryInput + " correspond à " + decimalFromBinary + " en base 10.");
+        System.out.println("Le nombre binaire " + binaryInput + " correspond à " + decimalFromBinary + " en base 10.");
 
-            sc.close();
-        }
+        sc.close();
     }
+}
